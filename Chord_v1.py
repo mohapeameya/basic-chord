@@ -261,7 +261,7 @@ while True:
         for i in range(0, MyNode.m):
             print(MyNode.fingerTable[i])
     elif cmd == "myid":
-        print(MyNode.myID)
+        print(MyNode.myNode)
     elif cmd == "succ":
         print(MyNode.successor)
     elif cmd == "pred":
