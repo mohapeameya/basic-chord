@@ -193,6 +193,15 @@ class ChordNode:
         server.serve_forever()
 
 
+print("\nSimple CHORD Protocol implementation")
+
+# m = int(input("Enter value of finger parameter 'm': "))
+m = 10  # 2**m nodes possible in the network
+print("Number of fingers set to", str(m))
+
+# r = int(input("Enter value of replication parameter 'r': "))
+r = 5   # replication parameter
+
 netFlag = ""
 networkChoice = str(input("\nSelect CHORD network: \n1. Local\n2. Public\nEnter choice:"))
 if networkChoice == "1":
@@ -202,12 +211,6 @@ elif networkChoice == "2":
 else:
     print("Invalid choice!!! Exiting...")
     exit(1)
-
-# m = int(input("Enter value of parameter 'm': "))
-m = 10  # 2**m nodes possible in the network
-
-# r = int(input("Enter value of replication parameter 'r': "))
-r = 5   # replication parameter
 
 portNo = ""
 portChoice = str(input("\nSelect Port:\n1. Custom port\n2. Random port\nEnter choice: "))
