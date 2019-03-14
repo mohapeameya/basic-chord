@@ -56,7 +56,7 @@ class ChordNode:
         self.myID = self.HexToDecimal(self.GenerateHash(self.mySocketAddress)) % (2**self.m)
 
         self.myNode = {"NodeID": self.myID, "NodeSocketAddress": self.mySocketAddress}
-        print(self.myNode)
+        print("My node info: ", self.myNode)
         self.terminate = False
         self.next = 0
 
