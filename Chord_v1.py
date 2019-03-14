@@ -241,7 +241,7 @@ if ringChoice == "1":
     MyNode.CreateRing()
 elif ringChoice == "2":
     # join known node of an existing ring
-    nodeSocketAddress = str(input("Enter socket address of known node(IP:PORT): "))
+    nodeSocketAddress = str(input("Enter socket address of ring creator node(IP:PORT): "))
     MyNode.JoinRing(nodeSocketAddress)
 else:
     print("Invalid choice!!! Exiting...")
